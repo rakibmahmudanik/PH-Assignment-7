@@ -2,136 +2,136 @@
   {
     "id": 1,
     "title": "Login Issue",
-    "description": "User unable to login with correct credentials.",
+    "description": "User is unable to login even after entering correct credentials. The system continuously shows an 'Invalid email or password' message. The issue persists across different browsers and devices. The user has already tried resetting the password but still cannot access the account. Immediate investigation is required to check authentication and database validation processes.",
     "customer": "Rakib Mahmud",
-    "priority": "High",
+    "priority": "HIGH PRIORITY",
     "status": "Open",
-    "createdAt": "2026-02-20T10:15:00Z"
+    "createdAt": "2026/02/20T10:15:00Z"
   },
   {
     "id": 2,
     "title": "Payment Failed",
-    "description": "Transaction failed but money deducted.",
+    "description": "Customer attempted to complete a payment transaction, but the system displayed a failure message. However, the payment amount was deducted from the customer's bank account. The issue may be related to payment gateway timeout or server response delay. The customer is requesting an urgent refund or confirmation of the transaction status.",
     "customer": "Koni Ahmed",
-    "priority": "High",
+    "priority": "HIGH PRIORITY",
     "status": "In Progress",
-    "createdAt": "2026-02-18T08:30:00Z"
+    "createdAt": "2026/02/18T08:30:00Z"
   },
   {
     "id": 3,
     "title": "UI Bug on Dashboard",
-    "description": "Dashboard layout breaks on mobile devices.",
+    "description": "The dashboard layout breaks when accessed from mobile devices and smaller screen sizes. Several UI components overlap each other, and navigation buttons become unresponsive. The responsiveness needs to be reviewed, especially CSS grid and flexbox configurations, to ensure a smooth user experience across all devices.",
     "customer": "Tanvir Hasan",
-    "priority": "Medium",
+    "priority": "MEDIUM PRIORITY",
     "status": "Open",
-    "createdAt": "2026-02-15T14:20:00Z"
+    "createdAt": "2026/02/15T14:20:00Z"
   },
   {
     "id": 4,
     "title": "Password Reset Email Not Sent",
-    "description": "User did not receive password reset email.",
+    "description": "User requested a password reset multiple times but did not receive any reset email. The spam folder was checked, and no email was found. There may be an issue with the email service configuration or SMTP server. The email delivery logs should be verified to identify the root cause.",
     "customer": "Nusrat Jahan",
-    "priority": "Medium",
-    "status": "Resolved",
-    "createdAt": "2026-02-10T09:45:00Z"
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2026/02/10T09:45:00Z"
   },
   {
     "id": 5,
     "title": "Slow Website Performance",
-    "description": "Website loads very slowly during peak hours.",
+    "description": "The website becomes extremely slow during peak hours, especially when multiple users access the system simultaneously. Pages take more than 10 seconds to load, which significantly impacts user experience. Possible causes include server overload, unoptimized database queries, or lack of caching mechanisms.",
     "customer": "Imran Hossain",
-    "priority": "High",
+    "priority": "HIGH PRIORITY",
     "status": "In Progress",
-    "createdAt": "2026-02-12T16:10:00Z"
+    "createdAt": "2026/02/12T16:10:00Z"
   },
   {
     "id": 6,
     "title": "Profile Picture Upload Error",
-    "description": "Error while uploading profile image.",
+    "description": "Users encounter an error message while attempting to upload a profile picture. The upload process fails regardless of image format (JPG, PNG) or size. The issue might be related to file size validation, server storage limits, or incorrect API configuration for file handling.",
     "customer": "Farzana Rahman",
-    "priority": "Low",
+    "priority": "LOW PRIORITY",
     "status": "Open",
-    "createdAt": "2026-02-05T11:00:00Z"
+    "createdAt": "2026/02/05T11:00:00Z"
   },
   {
     "id": 7,
     "title": "Search Not Working",
-    "description": "Search results are not showing relevant data.",
+    "description": "The search functionality is not returning relevant results based on user queries. In some cases, no results are displayed even when matching data exists in the database. The issue may be due to incorrect query filtering, indexing problems, or API response errors.",
     "customer": "Mahin Ahmed",
-    "priority": "High",
+    "priority": "HIGH PRIORITY",
     "status": "Open",
-    "createdAt": "2026-02-01T13:25:00Z"
+    "createdAt": "2026/02/01T13:25:00Z"
   },
   {
     "id": 8,
     "title": "Notification Delay",
-    "description": "Push notifications are delayed by several minutes.",
+    "description": "Push notifications are significantly delayed and sometimes delivered several minutes after the triggering event. This delay affects real/time communication and user engagement. The notification service integration and background job scheduling system need to be reviewed.",
     "customer": "Sadia Karim",
-    "priority": "Medium",
+    "priority": "MEDIUM PRIORITY",
     "status": "In Progress",
-    "createdAt": "2026-01-28T07:50:00Z"
+    "createdAt": "2026/01/28T07:50:00Z"
   },
   {
     "id": 9,
     "title": "Error 500 on Checkout",
-    "description": "Server error when completing checkout.",
+    "description": "Users encounter a '500 Internal Server Error' while attempting to complete the checkout process. The issue occurs after submitting payment details, which disrupts order placement. Backend server logs should be examined to identify unhandled exceptions or database transaction failures.",
     "customer": "Arif Chowdhury",
-    "priority": "High",
+    "priority": "HIGH PRIORITY",
     "status": "Open",
-    "createdAt": "2026-01-25T18:40:00Z"
+    "createdAt": "2026/01/25T18:40:00Z"
   },
   {
     "id": 10,
     "title": "Account Deactivation Request",
-    "description": "Customer requested account deactivation.",
+    "description": "The customer has requested account deactivation through support but reports that the account remains active. There might be a workflow issue in the deactivation process or a missing confirmation step. The support team should verify the request and ensure proper account closure procedures are followed.",
     "customer": "Mitu Sultana",
-    "priority": "Low",
-    "status": "Resolved",
-    "createdAt": "2026-01-22T12:15:00Z"
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2026/01/22T12:15:00Z"
   },
   {
     "id": 11,
     "title": "Data Sync Issue",
-    "description": "User data not syncing across devices.",
+    "description": "User data is not syncing properly across multiple devices. Changes made on one device are not reflected on others in real-time. The synchronization mechanism, API responses, and database update logic should be thoroughly tested to ensure data consistency.",
     "customer": "Rafiul Islam",
-    "priority": "Medium",
+    "priority": "MEDIUM PRIORITY",
     "status": "In Progress",
-    "createdAt": "2026-01-20T09:10:00Z"
+    "createdAt": "2026/01/20T09:10:00Z"
   },
   {
     "id": 12,
     "title": "Subscription Cancellation Error",
-    "description": "Unable to cancel subscription from settings.",
+    "description": "Users are unable to cancel their subscription from the account settings page. The cancellation button either does not respond or shows an error message. This may be due to incorrect API endpoint handling or payment gateway integration issues.",
     "customer": "Shila Akter",
-    "priority": "High",
+    "priority": "HIGH PRIORITY",
     "status": "Open",
-    "createdAt": "2026-01-18T15:55:00Z"
+    "createdAt": "2026/01/18T15:55:00Z"
   },
   {
     "id": 13,
     "title": "Broken Link in Footer",
-    "description": "Footer link redirects to 404 page.",
+    "description": "A link located in the website footer redirects users to a 404 error page instead of the intended destination. The routing configuration or URL mapping may be incorrect. All footer links should be tested to ensure proper navigation.",
     "customer": "Nazmul Haque",
-    "priority": "Low",
-    "status": "Resolved",
-    "createdAt": "2026-01-15T10:35:00Z"
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2026/01/15T10:35:00Z"
   },
   {
     "id": 14,
     "title": "App Crash on Startup",
-    "description": "Mobile app crashes immediately after opening.",
+    "description": "The mobile application crashes immediately after launch without displaying any error message. This issue affects multiple devices and operating system versions. Crash logs and debugging tools should be used to identify compatibility or initialization errors.",
     "customer": "Tania Sarker",
-    "priority": "High",
+    "priority": "HIGH PRIORITY",
     "status": "In Progress",
-    "createdAt": "2026-01-12T06:45:00Z"
+    "createdAt": "2026/01/12T06:45:00Z"
   },
   {
     "id": 15,
     "title": "Language Change Not Saving",
-    "description": "Selected language resets after page refresh.",
+    "description": "When users select a preferred language from the settings, the change is not saved after refreshing the page. The system resets to the default language. The issue might be related to local storage handling or missing backend persistence logic.",
     "customer": "Jahid Hasan",
-    "priority": "Medium",
+    "priority": "MEDIUM PRIORITY",
     "status": "Open",
-    "createdAt": "2026-01-10T14:05:00Z"
+    "createdAt": "2026/01/10T14:05:00Z"
   }
 ]

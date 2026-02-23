@@ -4,7 +4,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100  justify-between px-10 md:px-[80px]">
+    <div className="navbar bg-base-100 bg-white text-black justify-between px-10 md:px-[80px]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

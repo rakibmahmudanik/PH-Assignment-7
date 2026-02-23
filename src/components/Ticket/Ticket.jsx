@@ -1,14 +1,52 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 
-const Ticket = () => {
+const statusColors = {
+  Open: "bg-[#B9F8CF] text-[#02A53B]",
+  "In Progress": "bg-[#F8F3B9] text-[#FEBB0C]",
+  Resolved: "bg-[#B9F8CF] text-[#02A53B]",
+  Closed: "bg-[#B9F8CF] text-[#02A53B]",
+};
+
+const priorityColors = {
+  "HIGH PRIORITY": " text-[#F83044]",
+  "MEDIUM PRIORITY": "text-[#FEBB0C]",
+  "LOW PRIORITY": "text-[#02A53B]",
+};
+
+const Ticket = ({ ticket }) => {
   return (
     <>
-      <div className="card">
-        <div>
-          <h3>This is single ticket</h3>
-          <button className="btn rounded-full bg-green-200 text-green-900">
-            ● Open
+      <div className="card  bg-white shadow-sm rounded-sm p-3">
+        <div className="flex justify-between items-center">
+          <h3>{ticket.title}</h3>
+          <button
+            className={`btn  btn-sm rounded-full border-none ${statusColors[ticket.status]}`}
+          >
+            ● {ticket.status}
           </button>
+        </div>
+        <p className="text-sm text-[#627382] my-3">
+          {ticket.description.length > 150
+            ? ticket.description.slice(0, 150) + "..."
+            : ticket.description}
+        </p>
+
+        <div className="flex justify-between items-center text-sm">
+          <div>
+            <span className="pr-3 text-[#627382]">#100{ticket.id}</span>
+            <span className={`${priorityColors[ticket.priority]}`}>
+              {ticket.priority}
+            </span>
+          </div>
+          <div>
+            <span className="pr-3 text-[#627382]">{ticket.customer}</span>
+            <span>
+              <FontAwesomeIcon icon={faCalendar} />
+              <span className="ml-1">{ticket.createdAt.split("T", 1)}</span>
+            </span>
+          </div>
         </div>
       </div>
     </>
