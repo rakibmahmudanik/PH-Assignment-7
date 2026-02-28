@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
+import { toast } from "react-toastify";
 
 const statusColors = {
   Open: "bg-[#B9F8CF] text-[#02A53B]",
@@ -25,7 +26,7 @@ const Ticket = ({ ticket, setInProgress, inProgress }) => {
         onClick={() => {
           setIsSelected(true);
           setInProgress([...inProgress, ticket]);
-          alert("Ticket Added");
+          toast.success(`${ticket.title} is added in task`);
         }}
         className={`card  bg-white shadow-sm rounded-sm p-3 cursor-pointer ${isselected ? " opacity-70 pointer-events-none grayscale" : ""}`}
       >

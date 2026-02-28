@@ -1,7 +1,7 @@
 import React from "react";
 import InProgressTicket from "../inProgressTicket/InProgressTicket";
 
-const TaskStatus = ({ inProgress, completeTask }) => {
+const TaskStatus = ({ inProgress, completeTask, handleMainTickets }) => {
   return (
     <div className="my-3">
       <h1 className=" text-2xl mb-2">Task Status</h1>
@@ -13,6 +13,7 @@ const TaskStatus = ({ inProgress, completeTask }) => {
                 key={progressTicketData.id}
                 progressTicketData={progressTicketData}
                 completeTask={completeTask}
+                handleMainTickets={handleMainTickets}
               ></InProgressTicket>
             ))}
       </div>

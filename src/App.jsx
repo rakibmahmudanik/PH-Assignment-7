@@ -1,8 +1,10 @@
 import { Suspense, useState } from "react";
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 import BannerCards from "./components/BannerCards/BannerCards";
 import CustomarTickets from "./components/CustomarTickets/CustomarTickets";
 import Navbar from "./components/Navbar/Navbar";
+import Loader from "./components/loader/Loader";
 
 const fetchTicketsData = async () => {
   const res = await fetch("/tickets.json");
@@ -27,7 +29,7 @@ function App() {
         inProgress={inProgress}
         resolvedtasks={resolvedtasks}
       ></BannerCards>
-      <Suspense fallback="Tickets are loading...">
+      <Suspense fallback={<Loader></Loader>}>
         <CustomarTickets
           getTicketsData={getTicketsData}
           setInProgress={setInProgress}
@@ -36,6 +38,8 @@ function App() {
           resolvedtasks={resolvedtasks}
         ></CustomarTickets>
       </Suspense>
+
+      <ToastContainer stacked></ToastContainer>
     </>
   );
 }
