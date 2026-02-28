@@ -2,7 +2,7 @@ import React from "react";
 import vectorBG1 from "../../assets/VectorBG1.png";
 import vectorBG2 from "../../assets/VectorBG2.png";
 
-const InProgress = () => {
+const InProgress = ({ inProgress }) => {
   return (
     <div className="w-full rounded-md overflow-hidden relative ">
       <div className="absolute inset-0 bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"></div>
@@ -12,7 +12,7 @@ const InProgress = () => {
       <div className="card bg-transparent relative text-white md:h-45 lg:h-[250px] flex justify-center items-center">
         <div className="card-body flex justify-center items-center ">
           <h3 className="card-title">In-Progress</h3>
-          <h1 className="text-3xl">0</h1>
+          <h1 className="text-3xl">{inProgress}</h1>
         </div>
       </div>
     </div>
