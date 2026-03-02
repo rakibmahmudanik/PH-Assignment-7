@@ -1,15 +1,10 @@
 import React from "react";
 import { toast } from "react-toastify";
 
-const InProgressTicket = ({
-  progressTicketData,
-  completeTask,
-  handleMainTickets,
-}) => {
+const InProgressTicket = ({ progressTicketData, completeTask }) => {
   const handleComplete = () => {
     toast.success(`Completed`);
     completeTask(progressTicketData);
-    handleMainTickets(progressTicketData);
   };
 
   return (
