@@ -10,8 +10,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer w-full flex justify-between gap-4 bg-black  sm:footer-horizontal  p-10 md:p-20">
-        <aside className="w-[25%] text-white ">
+      <footer className="footer w-full flex flex-wrap justify-between gap-4 bg-black  p-10 md:p-20">
+        <aside className="w-full lg:w-[25%] text-white  mb-4">
           <h1 className="text-2xl">CS — Ticket System</h1>
           <p className="opacity-60">
             Lorem Ipsum is simply dummy text of the printing and typesetting
