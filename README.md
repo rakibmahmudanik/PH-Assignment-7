@@ -1,4 +1,4 @@
-## <a href="https://www.customer-service-app-rakib.netlify.app/" target="_blank">Live LInk</a>
+## <a href="https://customer-service-app-rakib.netlify.app/" target="_blank">Live LInk</a>
 
 
 1. What is JSX, and why is it used?
