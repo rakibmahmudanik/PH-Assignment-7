@@ -5,6 +5,7 @@ import BannerCards from "./components/BannerCards/BannerCards";
 import CustomarTickets from "./components/CustomarTickets/CustomarTickets";
 import Navbar from "./components/Navbar/Navbar";
 import Loader from "./components/loader/Loader";
+import Footer from "./components/Footer/Footer";
 
 const fetchTicketsData = async () => {
   const res = await fetch("/tickets.json");
@@ -38,6 +39,8 @@ function App() {
           resolvedtasks={resolvedtasks}
         ></CustomarTickets>
       </Suspense>
+
+      <Footer></Footer>
 
       <ToastContainer stacked></ToastContainer>
     </>

@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import React, { use } from "react";
 import Ticket from "../Ticket/Ticket";
 import TaskStatus from "../taskStatus/TaskStatus";
 import ResolvedTasks from "../ResolvedTasks/ResolvedTasks";
@@ -17,11 +17,11 @@ const CustomarTickets = ({
   );
 
   return (
-    <div className=" bg-[#eeeeee] w-full px-10 md:px-[80px] mb-10">
+    <div className=" bg-[#eeeeee] w-full px-10 md:px-20 pb-20">
       <h1 className="text-2xl font-bold">Customar Tickets</h1>
       <div className="w-full flex flex-col-reverse md:flex-row gap-4">
         <div className="w-full  md:w-[60%] lg:w-[75%] h-full grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4 ">
-          {filteredTickets.length == 0
+          {filteredTickets.length === 0
             ? "No tickets are available!"
             : filteredTickets.map((ticket) => (
                 <Ticket
